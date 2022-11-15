@@ -196,20 +196,20 @@ using CodingChallenge;
 
 //-----------------------------------------------------------------
 
-var fl2 = new Flight2();
-fl2.SetData();
-Console.WriteLine();
-fl2.Ascending();
-Console.WriteLine();
-fl2.Descending();
-Console.WriteLine();
-fl2.Duplicate();
-Console.WriteLine();
-fl2.MaxMin();
-Console.WriteLine();
-fl2.Search();
-Console.WriteLine();
-fl2.GetData();
+//var fl2 = new Flight2();
+//fl2.SetData();
+//Console.WriteLine();
+//fl2.Ascending();
+//Console.WriteLine();
+//fl2.Descending();
+//Console.WriteLine();
+//fl2.Duplicate();
+//Console.WriteLine();
+//fl2.MaxMin();
+//Console.WriteLine();
+//fl2.Search();
+//Console.WriteLine();
+//fl2.GetData();
 
 
 
@@ -222,3 +222,61 @@ fl2.GetData();
 //pa.Details();
 
 //-----------------------------------------------------------------
+
+//var decimalArray = new decimal[10];
+//for (int i = 0; i < decimalArray.Length; i+=2)
+//{
+//    decimalArray[i] = Decimal.Parse(Console.ReadLine());
+//}
+
+//foreach (var item in decimalArray)
+//{
+//    Console.WriteLine(item);
+//}
+
+
+//------------------------------------------------------------------------
+
+//var mt = new TotalMilesTravelled();
+//mt.CalculateFligherPoints();
+
+
+//------------------------------------------------------------------------
+
+//var fare = new decimal[10];
+//var dest = new string[10];
+//Console.WriteLine("Enter Destination:\n");
+
+//for (int j = 0; j < dest.Length; j++)
+//{
+//    dest[j] = Console.ReadLine();
+//}
+//Console.WriteLine("Enter Flight Fares:\n");
+//for (int i = 0; i < fare.Length; i++)
+//{
+//    fare[i] = decimal.Parse(Console.ReadLine());
+//}
+//Console.Write("Enter Number : ");
+//var n = int.Parse(Console.ReadLine());
+
+//Console.WriteLine($"Destination : {dest[n]}");
+//Console.WriteLine($"Cost        : {fare[n]}");
+
+//--------------------------------------------------------------------------
+
+DateOnly dob;
+dob = new DateOnly();
+var today = new DateOnly();
+
+today = DateOnly.Parse("15/11/2022");
+
+Console.Write("Enter DOB : ");
+dob = DateOnly.Parse(Console.ReadLine());
+
+var age = (today.DayNumber - dob.DayNumber) / 365;
+if (age <= 10) Console.WriteLine("Kid");
+if (age > 10 && age < 30) Console.WriteLine("Youth");
+if (age >= 30 && age < 60) Console.WriteLine("Adult");
+if (age > 60) Console.WriteLine("Old");
+
+Console.WriteLine();
